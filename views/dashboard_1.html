@@ -1,58 +1,58 @@
 <div class="row  border-bottom white-bg dashboard-header">
-<div class="row">
-    <div class="col-sm-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>Chiffre d'affaire</h5>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Chiffre d'affaire</h5>
 
-                <div class="pull-right">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-xs btn-white active">Aujourd'hui</button>
-                        <button type="button" class="btn btn-xs btn-white">Mois</button>
-                        <button type="button" class="btn btn-xs btn-white">Année</button>
-                    </div>
-                </div>
-            </div>
-            <div class="ibox-content">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="flot-chart" ng-controller="dashboardFlotTwo as chart">
-                            <div flot class="flot-chart-content" dataset="chart.flotData" options="chart.flotOptions"></div>
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-xs btn-white active">Aujourd'hui</button>
+                            <button type="button" class="btn btn-xs btn-white">Mois</button>
+                            <button type="button" class="btn btn-xs btn-white">Année</button>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <ul class="stat-list">
-                            <li>
-                                <h2 class="no-margins">30</h2>
-                                <small>Total des commandes</small>
-                                <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 48%;" class="progress-bar"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <h2 class="no-margins ">500</h2>
-                                <small>Commandes du mois dernier</small>
-                                <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 60%;" class="progress-bar"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <h2 class="no-margins ">15489</h2>
-                                <small>CA du mois</small>
-                                <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 22%;" class="progress-bar"></div>
-                                </div>
-                            </li>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="flot-chart" ng-controller="dashboardFlotTwo as chart">
+                                <div flot class="flot-chart-content" dataset="chart.flotData" options="chart.flotOptions"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="stat-list">
+                                <li>
+                                    <h2 class="no-margins">30</h2>
+                                    <small>Total des commandes</small>
+                                    <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2 class="no-margins ">500</h2>
+                                    <small>Commandes du mois dernier</small>
+                                    <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 60%;" class="progress-bar"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2 class="no-margins ">15489</h2>
+                                    <small>CA du mois</small>
+                                    <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar"></div>
+                                    </div>
+                                </li>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div>
     <div class="col-sm-6">
         <div class="statistic-box">
             <h4>
@@ -87,161 +87,177 @@
             </div>
 
         </div>
-   </div>
-   <div class="row">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-content" ng-controller="chartJsCtrl as chart">
-                <div>
-                    <span class="pull-right text-right">
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content" ng-controller="chartJsCtrl as chart">
+                    <div>
+                        <span class="pull-right text-right">
                     <small>Moyenne nombre de nouveaux clients  <strong>sur 1 mois</strong></small>
                         <br/>
                        23
                     </span>
 
-                    <h1 class="m-b-xs"></h1>
+                        <h1 class="m-b-xs"></h1>
 
-                    <h3 class="font-bold no-margins">
-                        Nombre de nouveaux clients
-                    </h3>
-                    <small></small>
-                </div>
-                <div>
-                <canvas linechart options="chart.lineOptions" data="chart.lineData" height="70" responsive=true ></canvas>
-                </div>
-                <div class="m-t-md">
-                    <small class="pull-right">
+                        <h3 class="font-bold no-margins">
+                            Nombre de nouveaux clients
+                        </h3>
+                        <small></small>
+                    </div>
+                    <div>
+                        <canvas linechart options="chart.lineOptions" data="chart.lineData" height="70" responsive=true></canvas>
+                    </div>
+                    <div class="m-t-md">
+                        <small class="pull-right">
                         <i class="fa fa-clock-o"> </i>
                         Update on 16.05.2017
                     </small>
-                    <small>
+                        <small>
                         <strong>Charte:</strong> En vert année en cours, en gris année n-1
                     </small>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-4">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <!--<span class="label label-success pull-right">Monthly</span>-->
-                <h5>Nombre de clients BtoC non facturés depuis deux mois</h5>
-            </div>
-            <div class="ibox-content">
-                <h1 class="no-margins">20</h1>
-
-                <div class="stat-percent font-bold text-success">5% <i class="fa fa-bolt"></i></div>
-                <small>evolution</small>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <!--<span class="label label-info pull-right">Deux mois</span>-->
-                <h5>Nombre de clients BtoB non facturés depuis deux mois </h5>
-            </div>
-            <div class="ibox-content">
-                <h1 class="no-margins">30</h1>
-
-                <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
-                <small>Evolution</small>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <!--<span class="label label-primary pull-right">Today</span>-->
-                <h5>Valeur du stock</h5>
-            </div>
-            <div class="ibox-content">
-                <h1 class="no-margins">10453 €</h1>
-
-                <div class="stat-percent font-bold text-navy">4% <i class="fa fa-level-up"></i></div>
-                <small>Comparatif n-1</small>
-            </div>
-        </div>
-    </div>
-   
-</div>
-<div class="row">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>Transactions worldwide</h5>
-                <div ibox-tools></div>
-            </div>
-            <div class="ibox-content">
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <table class="table table-hover margin bottom">
-                            <thead>
-                            <tr>
-                                <th style="width: 1%" class="text-center">No.</th>
-                                <th>Transaction</th>
-                                <th class="text-center">Date</th>
-                                <th class="text-center">Amount</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td> Security doors
-                                    </small></td>
-                                <td class="text-center small">16 Jun 2014</td>
-                                <td class="text-center"><span class="label label-primary">$483.00</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="text-center">2</td>
-                                <td> Wardrobes
-                                </td>
-                                <td class="text-center small">10 Jun 2014</td>
-                                <td class="text-center"><span class="label label-primary">$327.00</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="text-center">3</td>
-                                <td> Set of tools
-                                </td>
-                                <td class="text-center small">12 Jun 2014</td>
-                                <td class="text-center"><span class="label label-warning">$125.00</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="text-center">4</td>
-                                <td> Panoramic pictures</td>
-                                <td class="text-center small">22 Jun 2013</td>
-                                <td class="text-center"><span class="label label-primary">$344.00</span></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">5</td>
-                                <td>Phones</td>
-                                <td class="text-center small">24 Jun 2013</td>
-                                <td class="text-center"><span class="label label-primary">$235.00</span></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">6</td>
-                                <td>Monitors</td>
-                                <td class="text-center small">26 Jun 2013</td>
-                                <td class="text-center"><span class="label label-primary">$100.00</span></td>
-                            </tr>
-                            </tbody>
-                        </table>
                     </div>
-                    <div class="col-lg-6" ng-controller="dashboardMap as map">
-                        <div vector-map style="height: 300px;" my-map-data="map.data"></div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <!--<span class="label label-success pull-right">Monthly</span>-->
+                    <h5>Nombre de clients BtoC non facturés depuis deux mois</h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">20</h1>
 
+                    <div class="stat-percent font-bold text-success">5% <i class="fa fa-bolt"></i></div>
+                    <small>evolution</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <!--<span class="label label-info pull-right">Deux mois</span>-->
+                    <h5>Nombre de clients BtoB non facturés depuis deux mois </h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">30</h1>
 
+                    <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
+                    <small>Evolution</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <!--<span class="label label-primary pull-right">Today</span>-->
+                    <h5>Valeur du stock</h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">10453 €</h1>
 
+                    <div class="stat-percent font-bold text-navy">4% <i class="fa fa-level-up"></i></div>
+                    <small>Comparatif n-1</small>
+                </div>
+            </div>
+        </div>
+
+    <!--</div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Transactions worldwide</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <table class="table table-hover margin bottom">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 1%" class="text-center">No.</th>
+                                        <th>Transaction</th>
+                                        <th class="text-center">Date</th>
+                                        <th class="text-center">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td> Security doors
+                                            </small>
+                                        </td>
+                                        <td class="text-center small">16 Jun 2014</td>
+                                        <td class="text-center"><span class="label label-primary">$483.00</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td> Wardrobes
+                                        </td>
+                                        <td class="text-center small">10 Jun 2014</td>
+                                        <td class="text-center"><span class="label label-primary">$327.00</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td> Set of tools
+                                        </td>
+                                        <td class="text-center small">12 Jun 2014</td>
+                                        <td class="text-center"><span class="label label-warning">$125.00</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td> Panoramic pictures</td>
+                                        <td class="text-center small">22 Jun 2013</td>
+                                        <td class="text-center"><span class="label label-primary">$344.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td>Phones</td>
+                                        <td class="text-center small">24 Jun 2013</td>
+                                        <td class="text-center"><span class="label label-primary">$235.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td>Monitors</td>
+                                        <td class="text-center small">26 Jun 2013</td>
+                                        <td class="text-center"><span class="label label-primary">$100.00</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6" ng-controller="dashboardMap as map">
+                            <div vector-map style="height: 300px;" my-map-data="map.data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Carte des Magasins Ouverts - Carte des prospects chauds</h5>
+                     
+                    </div>
+                    <div class="ibox-content">
+                        <!--<p>
+                            With google maps <a href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions">API</a>                            You can easy customize your map.
+                        </p>-->
+                        <section id="map" ng-controller="GoogleMaps">
+                            <div ui-map="myMap" ui-options="mapOptions" class="google-map"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
