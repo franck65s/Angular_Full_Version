@@ -518,7 +518,7 @@ function dashboardFlotTwo() {
 
     var dataset = [
         {
-            label: "Number of orders",
+            label: "Montant HT factures du mois",
             grow:{stepMode:"linear"},
             data: data2,
             color: "#1ab394",
@@ -531,7 +531,7 @@ function dashboardFlotTwo() {
 
         },
         {
-            label: "Payments",
+            label: "Montant HT des bons de commandes",
             grow:{stepMode:"linear"},
             data: data1,
             yaxis: 2,
@@ -1795,10 +1795,30 @@ function chartJsCtrl() {
             value: 300,
             color:"#a3e1d4",
             highlight: "#1ab394",
-            label: "App"
+            label: "Factures"
         },
         {
             value: 50,
+            color: "#dedede",
+            highlight: "#1ab394",
+            label: "Bon de commande"
+        },
+        {
+            value: 100,
+            color: "#A4CEE8",
+            highlight: "#1ab394",
+            label: "à réaliser"
+        }
+    ];
+     this.doughnutData2 = [
+        {
+            value: 350,
+            color:"#a3e1d4",
+            highlight: "#1ab394",
+            label: "App"
+        },
+        {
+            value: 10,
             color: "#dedede",
             highlight: "#1ab394",
             label: "Software"
@@ -1810,7 +1830,46 @@ function chartJsCtrl() {
             label: "Laptop"
         }
     ];
-
+ this.doughnutData3 = [
+        {
+            value: 400,
+            color:"#a3e1d4",
+            highlight: "#1ab394",
+            label: "App"
+        },
+        {
+            value: 50,
+            color: "#dedede",
+            highlight: "#1ab394",
+            label: "Software"
+        },
+        {
+            value: 50,
+            color: "#A4CEE8",
+            highlight: "#1ab394",
+            label: "Laptop"
+        }
+    ];
+     this.doughnutData4 = [
+        {
+            value: 300,
+            color:"#a3e1d4",
+            highlight: "#1ab394",
+            label: "App"
+        },
+        {
+            value: 110,
+            color: "#dedede",
+            highlight: "#1ab394",
+            label: "Software"
+        },
+        {
+            value: 150,
+            color: "#A4CEE8",
+            highlight: "#1ab394",
+            label: "Laptop"
+        }
+    ];
     /**
      * Options for Doughnut chart
      */
