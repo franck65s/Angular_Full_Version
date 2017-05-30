@@ -6,6 +6,7 @@
  *   version 2.7.1
  *
 */
+
 h1,
 h2,
 h3,
@@ -169,7 +170,7 @@ h5 {
 }
 .nav-header {
   padding: 33px 25px;
-  background-color: #2f4050;
+  background-color:  #ffdf4f;
   background-image: url("patterns/header-profile.png");
 }
 .pace-done .nav-header {
@@ -332,7 +333,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 }
 .navbar-fixed-top,
 .navbar-static-top {
-  background: #f3f3f4;
+  background: #ffdf4f;
 }
 .fixed-nav #wrapper {
   margin-top: 0;
