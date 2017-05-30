@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-12">
         <div class="statistic-box">
             <h4>
                 CA du mois par Commerciaux
@@ -62,22 +62,22 @@
             <div class="row text-center" ng-controller="chartJsCtrl as chart">
 
                 <div class="col-lg-3">
-                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData" width="78" height="78"></canvas>
+                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData" width="170" height="170"></canvas>
                     <h5>Lucie</h5>
 
                 </div>
                 <div class="col-lg-3">
-                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData2" width="78" height="78"></canvas>
+                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData2" width="170" height="170"></canvas>
                     <h5>Anna</h5>
 
                 </div>
                 <div class="col-lg-3">
-                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData3" width="78" height="78"></canvas>
+                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData3" width="170" height="170"></canvas>
                     <h5>Julien</h5>
 
                 </div>
                 <div class="col-lg-3">
-                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData4" width="78" height="78"></canvas>
+                    <canvas doughnutchart options="chart.doughnutOptions" data="chart.doughnutData4" width="170" height="170"></canvas>
                     <h5>Ethan</h5>
 
                 </div>
@@ -176,7 +176,6 @@
                     <div ibox-tools></div>
                 </div>
                 <div class="ibox-content">
-
                     <div class="row">
                         <div class="col-lg-6">
                             <table class="table table-hover margin bottom">
@@ -196,7 +195,6 @@
                                         </td>
                                         <td class="text-center small">16 Jun 2014</td>
                                         <td class="text-center"><span class="label label-primary">$483.00</span></td>
-
                                     </tr>
                                     <tr>
                                         <td class="text-center">2</td>
@@ -204,7 +202,6 @@
                                         </td>
                                         <td class="text-center small">10 Jun 2014</td>
                                         <td class="text-center"><span class="label label-primary">$327.00</span></td>
-
                                     </tr>
                                     <tr>
                                         <td class="text-center">3</td>
@@ -212,7 +209,6 @@
                                         </td>
                                         <td class="text-center small">12 Jun 2014</td>
                                         <td class="text-center"><span class="label label-warning">$125.00</span></td>
-
                                     </tr>
                                     <tr>
                                         <td class="text-center">4</td>
@@ -242,22 +238,22 @@
                 </div>
             </div>
         </div>-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="ibox ">
-                    <div class="ibox-title">
-                        <h5>Carte des Magasins Ouverts - Carte des prospects chauds</h5>
-                     
-                    </div>
-                    <div class="ibox-content">
-                        <!--<p>
-                            With google maps <a href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions">API</a>                            You can easy customize your map.
-                        </p>-->
-                        <section id="map" ng-controller="GoogleMaps">
-                            <div ui-map="myMap" ui-options="mapOptions" class="google-map"></div>
-                        </section>
+    <div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Cartes des points de vente et prospects chauds</h5>
+                <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+
+                <div class="row">
+                    
+                    <div class="col-lg-6" ng-controller="dashboardMap as map">
+                        <div vector-map style="height: 300px;" my-map-data="map.data"></div>
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+</div>
